@@ -1,0 +1,24 @@
+[project]
+name = "campus-placement-predictor"
+version = "1.0.0"
+description = "A machine learning project to predict campus placements."
+authors = [{ name = "Sai Kushal Ranga" }]
+requires-python = ">=3.10"
+dependencies = [
+    "streamlit",
+    "scikit-learn",
+    "numpy",
+    "pandas"
+]
+
+[tool.ruff]
+# Set the target Python version for linting and formatting.
+target-version = "py310"
+# Configure the list of linter rules to enable.
+select = ["E", "F", "B", "I", "TID"]
+
+# Configure the linter to avoid certain rules.
+ignore = ["B008"]
+
+# Configure formatting to a standard line length.
+line-length = 88
