@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 
 MODEL_PATH = "model.pkl"
 ENCODER_PATH = "encoders.pkl"
-DATA_PATH = "data/cleaned_placement_data.csv"
+DATA_PATH = "cleaned_placement_data.csv"
 
 def train_and_save_model():
     if not os.path.exists(DATA_PATH):
